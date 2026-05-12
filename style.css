@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    /* transition-duration: 0.1s;  */
+}
+
+/* a:hover{
+    font-size: 20px;
+} */
+/* ================================================================================
+====================================================================================*/
+body {
+    background-color: #DDDDDD !important;
+}
+
+h1 {
+    margin: 15px auto !important;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* ============================================================ */
+#main {
+    width: 100%;
+    height: fit-content;
+    margin-top: 5vh !important;
+    padding-bottom: 20px !important;
+}
+
+.place {
+    width: 90%;
+    max-width: 300px;
+    height: 250px;
+    position: relative;
+    margin: 15px auto !important;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+.place h3 {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: -48px;
+    left: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: rgb(22, 19, 17, 0.8);
+    transition-duration: 0.5s;
+}
+
+.place:hover h3 {
+    bottom: -8px;
+}
+
+/* ============================================================ */
+#fullScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+.fullScreenDisplay{
+    display: none !important;
+}
+
+.icon_div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1E2021;
+    cursor: pointer;
+}
+
+.icon_div:hover{
+    background-color: #666666;
+}
+
+.fullImage {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 500px;
+}
+#fullScreen h3 , p{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+#closeIcon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+/*  ====================================== media query ================ */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
